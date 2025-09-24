@@ -1,0 +1,60 @@
+#cv-details {
+  display: none;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #fffeff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(226, 147, 202);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+.logo-photo {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 100px;
+}
+
+.nav-bar {
+  color: #3f3636;
+}
+
+.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 150px 50px 50px;
+}
+
+.text-section {
+  max-width: 600px;
+}
+
+.name {
+  font-size: 55px;
+  font-weight: bold;
+}
+
+.description {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.img-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-photo {
+  width: 360px;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 20px;
+}

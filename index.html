@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Curriculum Vitae</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        #cv-details {
+            display: none;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #fffeff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgb(226, 147, 202);
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div> 
+            <!--The Photo is Temporary -->
+            <img src="4bc9701a-1b09-410b-a80a-67bc09c65e72.jpg" alt="photo" class="logo-photo">
+        </div>
+        <div class="nav-bar"> Curriculum Vitae </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="text-section">
+            <div class="name"> I AM SAMANTHA LOUISE</div>
+            <div class="description"> A beginner developer, studying in Bicol University Polangui.<br>View below to know me better!</div>
+            
+
+        <div class="img-section"> 
+            <!--Also temporary-->
+            <img src="4bc9701a-1b09-410b-a80a-67bc09c65e72.jpg" alt="photo" class="my-photo">
+        </div>
+    </main>
+
+    <script>
+        $(document).ready(function() {
+            $('#btn').click(function(e) {
+                e.preventDefault(); 
+                $('#cv-details').slideToggle(400); 
+            });
+        });
+    </script>
+
+</body>
+</html>
