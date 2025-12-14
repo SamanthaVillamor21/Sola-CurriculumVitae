@@ -1,133 +1,123 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Curriculum Vitae</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <style>
-        #cv-details {
-            display: none;
-            margin-top: 20px;
-            padding: 20px;
-            background-color: #fffeff;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgb(226, 147, 202);
-        }
-    </style>
 </head>
 <body>
 
-    <nav>
-        <div> 
-            <img src="4bc9701a-1b09-410b-a80a-67bc09c65e72.jpg" alt="photo" class="logo-photo">
-        </div>
-        <div class="nav-bar"> Curriculum Vitae </div>
-    </nav>
+<nav>
+    <div>
+        <img src="4bc9701a-1b09-410b-a80a-67bc09c65e72.jpg" alt="photo" class="logo-photo">
+    </div>
+    <div class="nav-bar">Curriculum Vitae</div>
+</nav>
 
-    <main class="main-content">
-        <div class="text-section">
-            <div class="name"> I AM SAMANTHA LOUISE</div>
-            <div class="description">
-                A beginner developer, studying in Bicol University Polangui.<br>
-                View below to know me better!
-            </div>
-            
-            <div class="buttons">
-                <a href="#" id="btn" class="button primary">View CV</a>
-            </div>
-
-            <div id="cv-details" class="about-sector">
-                <div>
-                    <h1 class="complete-name">SAMANTHA LOUISE V. SOLA</h1>
-                    <h4>Address</h4>
-                    <p>Purok 1, Brgy. Biyong, City of Masbate</p>
-                    <h4>Contact Number</h4>
-                    <p>09637493578</p>
-                    <h4>Email Address</h4>
-                    <a href="mailto:samanthalouisevillamor8@gmail.com">
-                        samanthalouisevillamor8@gmail.com
-                    </a> 
-                </div>
-
-                <hr>
-
-                <div>
-                    <h4>About Me</h4>
-                    <p>
-                        A hardworking and patient Web Developer college student in Bicol University Polangui,
-                        looking for a good opportunity where I can use my skills and learn more.
-                        I am dedicated and eager to learn, and I always do my best to improve and grow.
-                    </p>
-                </div>
-
-                <hr>
-
-                <div>
-                    <h4>Educational Background</h4>
-                    <b>High School</b> &nbsp;2018-2022
-                    <p>Masbate National Comprehensive High School<br>City of Masbate</p>
-
-                    <b>Senior High School</b> &nbsp;2022-2024
-                    <p>Masbate National Comprehensive High School<br>City of Masbate</p>
-
-                    <b>College</b> &nbsp;2024-2025
-                    <p>
-                        Bachelor of Science in Information System<br>
-                        Bicol University Polangui<br>
-                        Polangui, Albay
-                    </p>
-                </div>
-
-                <hr>
-
-                <div>
-                    <h4>Skills</h4>
-                    <ul>
-                        <li>Basic HTML, CSS, C++, and Python</li>
-                        <li>Problem-solving</li>
-                        <li>Communication skills</li>
-                        <li>Time management and organization</li>
-                    </ul>
-                </div>
-
-                <hr>
-
-                <div>
-                    <h4>Hobbies</h4>
-                    <ul>
-                        <li>Dancing</li>
-                        <li>Singing</li>
-                        <li>Drawing and digital art</li>
-                    </ul>
-                </div>
-
-                <hr>
-
-                <div>
-                    <h4>Character Reference</h4>
-                    <p>
-                        <strong>Jeffrey L. Almero</strong><br>
-                        Barangay Captain<br>
-                        Brgy. Biyong, City of Masbate
-                    </p>
-                </div>
-
-            </div>
+<main class="main-content">
+    <div class="text-section">
+        <div class="name">I AM SAMANTHA LOUISE</div>
+        <div class="description">
+            A beginner developer, studying in Bicol University Polangui.<br>
+            View below to know me better!
         </div>
 
-        <div class="img-section"> 
-            <img src="4bc9701a-1b09-410b-a80a-67bc09c65e72.jpg" alt="photo" class="my-photo">
+        <div class="buttons">
+            <a href="#" id="btn" class="button primary">View CV</a>
         </div>
-    </main>
 
-    <script>
-        $(document).ready(function() {
-            $('#btn').click(function(e) {
-                e.preventDefault();
-                $('#cv-details').slideToggle(400);
-            });
+        <div id="cv-details">
+
+            <div class="cv-box">
+                <h1 class="complete-name">SAMANTHA LOUISE V. SOLA</h1>
+            </div>
+
+            <div class="cv-box">
+                <h4>Address</h4>
+                <p>Purok 1, Brgy. Biyong, City of Masbate</p>
+            </div>
+
+            <div class="cv-box">
+                <h4>Contact Number</h4>
+                <p>09637493578</p>
+            </div>
+
+            <div class="cv-box">
+                <h4>Email Address</h4>
+                <a href="mailto:samanthalouisevillamor8@gmail.com">
+                    samanthalouisevillamor8@gmail.com
+                </a>
+            </div>
+
+            <div class="cv-box">
+                <h4>About Me</h4>
+                <p>
+                    A hardworking and patient Web Developer college student in Bicol University Polangui,
+                    looking for a good opportunity where I can use my skills and learn more.
+                </p>
+            </div>
+
+            <div class="cv-box">
+                <h4>Educational Background</h4>
+                <b>High School (2018–2022)</b>
+                <p>Masbate National Comprehensive High School<br>City of Masbate</p>
+
+                <b>Senior High School (2022–2024)</b>
+                <p>Masbate National Comprehensive High School<br>City of Masbate</p>
+
+                <b>College (2024–2025)</b>
+                <p>
+                    BS in Information System<br>
+                    Bicol University Polangui<br>
+                    Polangui, Albay
+                </p>
+            </div>
+
+            <div class="cv-box">
+                <h4>Skills</h4>
+                <ul>
+                    <li>Basic HTML, CSS, C++, and Python</li>
+                    <li>Problem-solving</li>
+                    <li>Communication skills</li>
+                    <li>Time management</li>
+                </ul>
+            </div>
+
+            <div class="cv-box">
+                <h4>Hobbies</h4>
+                <ul>
+                    <li>Dancing</li>
+                    <li>Singing</li>
+                    <li>Drawing and digital art</li>
+                </ul>
+            </div>
+
+            <div class="cv-box">
+                <h4>Character Reference</h4>
+                <p>
+                    <strong>Jeffrey L. Almero</strong><br>
+                    Barangay Captain<br>
+                    Brgy. Biyong, City of Masbate
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="img-section">
+        <img src="4bc9701a-1b09-410b-a80a-67bc09c65e72.jpg" alt="photo" class="my-photo">
+    </div>
+</main>
+
+<script>
+    $(document).ready(function () {
+        $('#btn').click(function (e) {
+            e.preventDefault();
+            $('#cv-details').slideToggle(400);
         });
-    </script>
+    });
+</script>
 
 </body>
 </html>
