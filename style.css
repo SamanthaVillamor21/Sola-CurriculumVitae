@@ -6,7 +6,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #f5f7fa 0%, #f7c7db 100%);
+  background: linear-gradient(135deg, #f5f7fa 0%, #e2c3d0 100%);
   min-height: 100vh;
 }
 
@@ -32,16 +32,15 @@ nav {
 }
 
 .nav-bar {
-  display: flex;
-  list-style: none;
   color: #3f3636;
-  gap: 30px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .main-content {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: flex-start;
   padding: 150px 50px 50px;
   max-width: 1400px;
   margin: 0 auto;
@@ -55,7 +54,6 @@ nav {
 .name {
   font-size: 55px;
   font-weight: bold;
-  color: #333;
   margin-bottom: 20px;
   background: linear-gradient(45deg, #f1a8e8, #d0365a);
   -webkit-background-clip: text;
@@ -77,13 +75,11 @@ nav {
 
 .button {
   padding: 15px 30px;
-  border: none;
   border-radius: 50px;
   font-size: 16px;
   font-weight: 600;
-  cursor: pointer;
   text-decoration: none;
-  display: inline-block;
+  cursor: pointer;
   transition: all 0.3s ease;
 }
 
@@ -97,14 +93,13 @@ nav {
   background: #e16792;
   color: white;
   transform: translateY(-2px);
-  
 }
 
 .img-section {
   flex: 1;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: center; 
+  align-items: flex-start; 
 }
 
 .my-photo {
@@ -114,49 +109,43 @@ nav {
   border-radius: 20px;
   animation: float 3s ease-in-out infinite;
   box-shadow: 0 10px 30px rgba(240, 157, 227, 0.979);
+  margin-top: 0;
 }
 
-.background-text {
-  position: absolute;
-  font-size: 200px;
-  font-weight: 900;
-  color: rgba(255, 255, 255, 0.03);
-  left: -50px;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: -1;
-  user-select: none;
+#cv-details {
+  display: none;
+  margin-top: 30px;
 }
-.about-sector{
-  padding: 10;
+
+.cv-box {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #fffeff;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgb(226, 147, 202);
 }
-.complete-name{
-  background-color: #ee7297;  
+
+.cv-box h4 {
+  margin-bottom: 10px;
+  color: #a13a78;
+}
+
+.complete-name {
+  background-color: #ee7297;
   font-size: 25px;
   font-weight: bold;
   text-align: center;
   color: white;
+  padding: 10px;
+  border-radius: 8px;
 }
 
 @keyframes float {
-  0%,
-  100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
 }
 
 @media (max-width: 768px) {
-  nav {
-    padding: 15px 20px;
-  }
-
-  .nav-links {
-    gap: 20px;
-  }
-
   .main-content {
     flex-direction: column;
     padding: 120px 20px 50px;
@@ -167,20 +156,16 @@ nav {
     margin-bottom: 50px;
   }
 
-  .text-section h1 {
-    font-size: 36px;
+  .img-section {
+    margin-top: 30px; 
   }
 
   .name {
-    font-size: 48px;
+    font-size: 42px;
   }
 
   .my-photo {
     width: 300px;
     height: 300px;
-  }
-
-  .background-text {
-    font-size: 120px;
   }
 }
